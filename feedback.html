@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Mereena's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Feedback Form</h1>
+  </header>
+
+  <main>
+    <form id="feedbackForm">
+      <input type="text" id="visitorName" placeholder="Your Name" required>
+      <input type="email" id="visitorEmail" placeholder="Your Email" required>
+      <textarea id="visitorMessage" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <p id="feedbackMessage"></p>
+
+    <!-- Logout Button -->
+    <button onclick="logout()">Logout</button>
+  </main>
+
+  <footer>
+    <p>© Mereena's Portfolio</p>
+  </footer>
+
+  <script>
+    function logout() {
+      // Redirect back to homepage
+      window.location.href = "index.html";
+    }
+  </script>
+  <script src="form.js"></script>
+</body>
+</html>
